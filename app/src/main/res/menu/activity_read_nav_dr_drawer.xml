@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_forward_black_24dp"
+            android:title="@string/login_or_sign_up" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/ic_sign_out_"
+            android:title="@string/sign_out" />
+        <item
+            android:id="@+id/nav_forgot_password"
+            android:icon="@drawable/ic_lock_open_black_24dp"
+            android:title="@string/forgot_password" />
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/ic_lock_black_24dp"
+            android:title="@string/change_password" />
+    </group>
+
+
+    <item
+        android:id="@+id/nav_lock_portrait"
+        android:icon="@drawable/ic_crop_portrait_black_24dp"
+        android:title="@string/lock_in_portrait" />
+    <item
+        android:id="@+id/nav_lock_landscape"
+        android:icon="@drawable/ic_crop_landscape_black_24dp"
+        android:title="@string/lock_in_landscape_mode" />
+    <item
+        android:id="@+id/nav_auto_orientation"
+        android:icon="@drawable/ic_screen_rotation_black_24dp"
+        android:title="@string/auto_orientation" />
+
+    <item
+        android:id="@+id/help_menu_item"
+        android:icon="@drawable/ic_help_outline_black_24dp"
+        android:title="@string/help"
+
+        />
+    <item
+        android:id="@+id/privacy_policy_menu_item"
+        android:icon="@drawable/ic_text"
+        android:title="@string/privacy_policy"
+
+        />
+</menu>

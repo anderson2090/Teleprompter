@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/read_full_screen_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".readScript.ReadFullscreenActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/highlighter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#800000ff"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ScrollView
+        android:id="@+id/fullscreen_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+
+            android:id="@+id/fullscreen_script_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+            android:keepScreenOn="true"
+            android:text="@string/dummy_content"
+            android:textColor="#33b5e5"
+            android:textSize="50sp"
+            android:textStyle="bold"
+
+            />
+    </ScrollView>
+    <!--<RelativeLayout-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/highlighter_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="#800000ff">-->
+    <!--</RelativeLayout>-->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <RelativeLayout
+        android:id="@+id/count_down_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#99000000">
+
+
+        <TextView
+            android:id="@+id/count_down_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            tools:text="3" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/full_screen_pause_play_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pause"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
